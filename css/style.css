@@ -163,6 +163,7 @@ body {
   justify-content: center;
   row-gap: 20px;
   column-gap: 10px;
+  padding-bottom: 100px;
 }
 
 .tools-item {
@@ -211,6 +212,9 @@ body {
   color: var(--tools-color-list);
   transition: all 0.5s;
 }
+.tools-card-list{
+  display: flex;
+}
 
 .tools-card-link {
   padding: 9px 35px;
@@ -218,9 +222,9 @@ body {
   border: none;
   background-color: transparent;
   color: var(--header-list-color);
-  font-size: 16px;
+  /*font-size: 16px;
   font-family: var(--main-family);
-  text-decoration: none;
+  text-decoration: none;*/
 }
 
 .tools-card-link:hover {
@@ -228,11 +232,24 @@ body {
   color: var(--button-color-text);
   transition: all 0.5s;
 }
-.tools-button
+.tools-button{
+  border: 1px solid var(--input-gradient-color1);
+  border-radius: 8px;
+  padding: 17px 38px;
+  background-color: transparent;
+  color: var(--button-color);
+  font-weight: 500;
+  font-size: 20px;
+  /*line-height: 100%;
+  letter-spacing: 0%;*/
+  font-family: var(--main-family);
+  /*як поставети кнопку по центрі*/
+}
 /*tools end*/
 /*brand start*/
 .brand {
-  padding: 55px 82px;
+  /*що тут не так*/
+  margin: 55px 82px;
   background: rgba(40, 48, 54, 0.6);
   /*border: 2px solid linear-gradient(118.49deg, rgba(255, 255, 255, 0.08) -2.11%, rgba(255, 255, 255, 0) 28.55%, rgba(255, 255, 255, 0.05) 44.69%, rgba(255, 255, 255, 0) 96.78%)*/;
   backdrop-filter: blur(50px);
