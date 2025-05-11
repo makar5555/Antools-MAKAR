@@ -28,7 +28,6 @@ footer, header, hgroup, menu, nav, section {
 	box-sizing: border-box;
 }
 .container {
-	width: 1200px;
 	margin: 0 auto;
 }
 body {

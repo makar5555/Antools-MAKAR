@@ -25,7 +25,9 @@ body {
   font-family: var(--main-family);
   font-size: 16px;
 }
-
+.container{
+  width: 1440px;
+}
 /*HEADER*/
 .header {
   padding-top: 26px;
@@ -124,26 +126,40 @@ body {
   font-size: 14px;
   line-height: 100%;
 }
-
+/* mit-------------------------------------------------------------------------------*/
+.hero-input::before{
+  content: "";
+  display: inline-block;
+  background-image: url(../img/hero/search.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
+  padding-left: 18px;
+}
 .hero-input {
   background-image: linear-gradient(to top);
   background-color: transparent;
   border: none;
   width: 190px;
-  height: 21px;
 }
-
+.hero-list{
+  display: flex;
+  padding-top: 110px;
+  gap: 20px;
+}
 /*hero end*/
 /*tools start*/
 .tools {
   padding-top: 200px;
+  text-align: center;
 }
 
 .tools-title {
   font-weight: 500;
   font-size: 48px;
   line-height: 130%;
-  text-align: center;
+  /*text-align: center;*/
   color: var(--logo-color);
 }
 
@@ -153,7 +169,7 @@ body {
   font-weight: 500;
   font-size: 18px;
   line-height: 30px;
-  text-align: center;
+  /*text-align: center;*/
   color: var(--header-list-color);
 }
 
@@ -168,6 +184,7 @@ body {
 
 .tools-item {
   padding: 33px;
+  text-align: left;
 }
 
 .tools-item:hover {
@@ -185,10 +202,11 @@ body {
   font-size: 24px;
   line-height: 1;
 }
-/*
-.tools-wraper {
+
+.tools-wrap {
+  display: flex;
 }
-*/
+
 .tools-card-subtitle {
   padding-top: 3px;
   color: var(--tools-color-wraper);
@@ -199,9 +217,9 @@ body {
   padding-left: 30px;
 }
 
-/*.tools-card-img{
-
-}*/
+.tools-card-img{
+  padding-bottom: 31px;
+}
 .tools-card-desc {
   color: var(--header-list-color);
   padding-bottom: 30px;
@@ -212,8 +230,9 @@ body {
   color: var(--tools-color-list);
   transition: all 0.5s;
 }
-.tools-card-list{
+.tools-icon-list{
   display: flex;
+  gap: 18px;
 }
 
 .tools-card-link {
@@ -227,11 +246,16 @@ body {
   text-decoration: none;*/
 }
 
+.tools-wrap-list{
+  display: flex;
+  justify-content: space-between;
+}
 .tools-card-link:hover {
   background-color: var(--button-color);
   color: var(--button-color-text);
   transition: all 0.5s;
 }
+
 .tools-button{
   border: 1px solid var(--input-gradient-color1);
   border-radius: 8px;
@@ -249,12 +273,18 @@ body {
 /*brand start*/
 .brand {
   /*що тут не так*/
-  margin: 55px 82px;
-  background: rgba(40, 48, 54, 0.6);
-  /*border: 2px solid linear-gradient(118.49deg, rgba(255, 255, 255, 0.08) -2.11%, rgba(255, 255, 255, 0) 28.55%, rgba(255, 255, 255, 0.05) 44.69%, rgba(255, 255, 255, 0) 96.78%)*/;
+  padding-top: 200px;
   backdrop-filter: blur(50px);
-  border-radius: 25px;
   transition: all 0.5s;
+}
+.container-brand {
+  background: rgba(40, 48, 54, 0.6);
+  padding: 55px 82px;
+  border-radius: 25px;
+  border: 2px solid linear-gradient(118.49deg, rgba(255, 255, 255, 0.08) -2.11%, rgba(255, 255, 255, 0) 28.55%, rgba(255, 255, 255, 0.05) 44.69%, rgba(255, 255, 255, 0) 96.78%);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .brand-title {
